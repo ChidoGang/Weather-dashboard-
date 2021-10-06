@@ -1,0 +1,60 @@
+#header{
+    color:aquamarine;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+
+li{
+    font-size: 10pt;
+    padding: 5px opx;
+}
+
+.col{
+    padding: 2px;
+}
+
+.card{
+    width: 100%;
+    background-color: black;
+}
+
+.forecast-card {
+    color:white;
+    backround-color:#0275d8;
+    border-radius: 5px;
+    font-size: 8pt;
+}
+
+.search-section {
+    height:100%;
+}
+
+.cityList{
+    border:solid;
+    border-width: thin;
+    border-radius: 5px;
+    margin: 5px;
+    padding-left: 2px;
+    padding-left: 2px;
+    background-color: burlywood;
+
+}
+
+.cityList:hover {
+background-color: #0275d8;
+color: #fff;
+}
+
+#FiveDayHeader {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Container {
+    margin-top: 5px;
+}
+
+
