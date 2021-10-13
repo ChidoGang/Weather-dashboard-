@@ -1,5 +1,4 @@
-
-const weathercard=document.getElementById("Weathercard")
+const weathercard=document.getElementById("Weathercard");
 
  
 var cityName = "";
@@ -61,22 +60,35 @@ function getweather() {
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' +cityName + "&langappid=0b2c8dcafe03cc68f1ee010c88b59629";
 }
 
-.then(function (response) {
-lat = response.coord.lat;
-lon = response.coord.lon;
-})
 
 function init(){
     localStorage.setItem("cityname,repsone.name");
 
     cityName = localStorage.getItem("cityname");
     if (cityName !== null) {
-    var cityList=$("button")
     cityList.addclass("list-group-item-group-item-action");
     cityList.text(cityName);
     $("ul").prepend(cityList);   
     }
+}
 
-    function searchButtion() {
-        cityName = $("input").val(.trim();
+    function searchButtion(){
+        cityName = $("input").valtrim();
+        var cityList=$("button")
+        cityList.addclass("list-group-item-group-item-action");
+        cityList.text(cityName);
+
+        $("ul").prepend(cityList);
+        $("input").val("");
     }
+
+
+    $("#city-form").submit(function(Event){
+        Event.preventDefault();
+        searchButtion();
+    });
+
+    $("#form-submit").on("click",function(Event){
+        Event.preventDefault();
+        searchButtion();
+    }); 
