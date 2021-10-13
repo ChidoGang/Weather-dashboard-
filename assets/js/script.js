@@ -14,7 +14,7 @@ var cordArray = [];
 var forecastArray = [];
 
 function generateCoordinates() {
-    var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=06b8acf76066beddfccf87017b0bb7a2';
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=0b2c8dcafe03cc68f1ee010c88b59629';
 
     fetch(apiUrl).then(function(response) {
         if(response.ok) {
@@ -29,7 +29,7 @@ function generateCoordinates() {
 function generateForecast() {
     var lat = cordArray.coord.lat
     var lon = cordArray.coord.lon
-    var apiUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon +'&exclude=minutely,hourly,alerts&appid=06b8acf76066beddfccf87017b0bb7a2';
+    var apiUrl = 'https://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon +'&exclude=minutely,hourly,alerts&appid=0b2c8dcafe03cc68f1ee010c88b59629';
 
     fetch(apiUrl).then(function(response) {
         if(response.ok) {
