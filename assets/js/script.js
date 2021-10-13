@@ -1,3 +1,4 @@
+/* Var functions */
 const cityForm = document.getElementById('cityForm');
 const cityList = document.getElementById('cityList');
 const cityEl = document.getElementById('city');
@@ -12,6 +13,8 @@ var cityName;
 var city;
 var cordArray = [];
 var forecastArray = [];
+/* End of  var */
+
 
 function generateCoordinates() {
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=0b2c8dcafe03cc68f1ee010c88b59629';
@@ -78,7 +81,7 @@ function printForecast() {
 
     print5DayForecast();
 }
-
+/* 5 day forcast Displays and functions */
 function print5DayForecast() {
     $("#fiveDayEl").children().remove();
 
@@ -119,7 +122,9 @@ function print5DayForecast() {
         fiveDay.appendChild(humidity);
     }
 }
+/* End of for loop */ 
 
+/* Button generatong section for functions */
 function generateButtons() {
     $('#cityList').children().remove();
 
@@ -155,3 +160,4 @@ $('#searchBtn').on("click", function() {
 $(document).ready(function() {
     generateButtons();
 })
+/* End of button section */ 

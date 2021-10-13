@@ -1,22 +1,9 @@
-.row {
-    color: black;
-}
 
-li {
-    font-size: 12pt;
-    padding-left: 0%;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0%;
-
-}
-
+/* Image icon for current weather */
 .icon {
     width: 100px;
 }
-
+/* uvindex section */
 .low {
     background-color: rgb(0, 255, 0);
 }
