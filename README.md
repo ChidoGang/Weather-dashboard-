@@ -15,5 +15,5 @@ This Application is intended to allow any user who clicks the link to, Type in a
 
 # License 
  Copyright Edgar,Q 2021
-Permission is hereby granted, free f charge, to any person obtaining copy of thissoftware andassociated documentationfiles (the "software"), to deal in the software with out restriction, including without limitation the rights to use, copy, modify, merge, publish. 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "software"), to deal in the software with out restriction, including without limitation the rights to use, copy, modify, merge, publish. 
 The above copyright notice and this permisssion notice shall be inluded in all copies or substantial portions of the Software. 
